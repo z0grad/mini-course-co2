@@ -2,8 +2,7 @@ import streamlit as st
 import pickle
 
 # Load the pickled model
-with open('./model.pkl', 'rb') as f:
-    model = pickle.load(f)
+model = pickle.load(open('./model.pkl', 'rb'))
 
 # Title
 st.title('Predicting the Co2 Emission of a Car')
