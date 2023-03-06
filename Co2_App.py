@@ -9,7 +9,7 @@ with open('./model.pkl', 'rb') as f:
 st.title('Predicting the Co2 Emission of a Car')
 
 # Image
-st.image('co2.jpg')
+st.image('./co2.jpg')
 
 # Inputs
 engine_size = st.number_input('Engine Size', min_value=0.0, max_value=10.0, value=1.0)
